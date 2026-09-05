@@ -43,6 +43,18 @@ h1 span { color: var(--coral); }
 .hero-ticker { bottom: 25px; font-family: Consolas, monospace; font-size: 10px; left: 0; letter-spacing: .15em; overflow: hidden; position: absolute; white-space: nowrap; width: 100%; z-index: 3; }
 .hero-ticker span { animation: ticker 22s linear infinite; display: inline-block; }
 @keyframes ticker { to { transform: translateX(-50%); } }
+.how-section { background: var(--paper); border-bottom: 1px solid var(--line); margin: 0 auto; max-width: 1240px; padding: 80px clamp(22px, 5vw, 65px) 92px; }
+.how-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 36px; }
+.how-heading h2 { font-size: clamp(38px, 4.5vw, 58px); }
+.steps-grid { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+.step-card { border: 2px solid var(--ink); min-height: 245px; padding: 18px; position: relative; }
+.step-one { background: var(--lime); }
+.step-two { background: var(--yellow); }
+.step-three { background: var(--coral); }
+.step-number { font-family: Consolas, monospace; font-size: 11px; }
+.step-icon { font-size: 45px; margin: 25px 0 18px; }
+.step-card h3 { font-size: 24px; letter-spacing: -.06em; margin: 0 0 7px; }
+.step-card p { font-size: 13px; line-height: 1.45; margin: 0; max-width: 250px; }
 .moves-section { margin: 0 auto; max-width: 1240px; padding: 105px clamp(22px, 5vw, 65px) 115px; }
 .section-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 49px; }
 h2 { font-size: clamp(41px, 5vw, 70px); letter-spacing: -.08em; line-height: .95; margin-bottom: 0; }
@@ -58,7 +70,7 @@ h2 span { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .move-card { background: var(--card-color, var(--yellow)); border: 2px solid var(--ink); cursor: pointer; display: flex; flex-direction: column; min-height: 252px; padding: 18px; position: relative; transition: transform .2s ease, box-shadow .2s ease; }
 .move-card:nth-child(3n) { min-height: 280px; }
 .move-card:hover, .move-card.is-picked { box-shadow: 6px 6px 0 var(--ink); transform: translate(-3px, -3px); }
-.move-card.is-picked::after { color: var(--ink); content: 'your move ✦'; font-family: Consolas, monospace; font-size: 10px; position: absolute; right: 15px; text-transform: uppercase; top: 16px; }
+.move-card.is-picked::after { color: var(--ink); content: "your move *"; font-family: Consolas, monospace; font-size: 10px; position: absolute; right: 15px; text-transform: uppercase; top: 16px; }
 .move-icon { align-items: center; display: flex; font-size: 53px; height: 91px; justify-content: center; transform: rotate(-5deg); }
 .move-card:nth-child(even) .move-icon { transform: rotate(6deg); }
 .move-name { font-size: 23px; letter-spacing: -.06em; margin: auto 0 7px; }
@@ -72,6 +84,6 @@ h2 span { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .choose-card h2 { font-size: clamp(38px, 4.5vw, 60px); }
 .choose-copy { font-size: 15px; line-height: 1.5; max-width: 250px; }
 .site-footer { display: flex; font-family: Consolas, monospace; font-size: 10px; justify-content: space-between; padding: 23px clamp(22px, 5vw, 65px); text-transform: uppercase; }
-@media (max-width: 900px) { .hero { min-height: 750px; padding-top: 135px; } .hero-art { opacity: .88; right: -85px; top: 340px; transform: scale(.75); transform-origin: top right; } .move-grid { grid-template-columns: repeat(3, 1fr); } .choose-card { grid-template-columns: 1fr 1fr; } .choose-card .button { grid-column: 2; grid-row: 1 / span 2; } }
-@media (max-width: 620px) { .site-header { padding-top: 18px; } .header-link { font-size: 9px; } .hero { min-height: 735px; padding: 118px 22px 70px; } h1 { font-size: clamp(47px, 14vw, 75px); } .hero-intro { font-size: 15px; max-width: 290px; } .hero-art { right: -142px; top: 350px; transform: scale(.65); } .section-heading { align-items: start; display: block; } .section-note { margin-top: 23px; text-align: left; } .move-grid { grid-template-columns: repeat(2, 1fr); } .move-card, .move-card:nth-child(3n) { min-height: 225px; padding: 13px; } .move-icon { font-size: 39px; height: 70px; } .move-name { font-size: 19px; } .move-description { font-size: 11px; } .card-tag { margin-bottom: 17px; } .choose-section { padding: 62px 30px; } .choose-card { display: block; } .choose-doodle { left: auto; right: 10px; top: -30px; } .choose-copy { margin: 24px 0; } .site-footer { gap: 10px; line-height: 1.4; } .site-footer span:nth-child(2) { display: none; } }
+@media (max-width: 900px) { .hero { min-height: 750px; padding-top: 135px; } .hero-art { opacity: .88; right: -85px; top: 340px; transform: scale(.75); transform-origin: top right; } .steps-grid { grid-template-columns: repeat(3, 1fr); } .move-grid { grid-template-columns: repeat(3, 1fr); } .choose-card { grid-template-columns: 1fr 1fr; } .choose-card .button { grid-column: 2; grid-row: 1 / span 2; } }
+@media (max-width: 620px) { .site-header { padding-top: 18px; } .header-link { font-size: 9px; } .hero { min-height: 735px; padding: 118px 22px 70px; } h1 { font-size: clamp(47px, 14vw, 75px); } .hero-intro { font-size: 15px; max-width: 290px; } .hero-art { right: -142px; top: 350px; transform: scale(.65); } .section-heading { align-items: start; display: block; } .section-note { margin-top: 23px; text-align: left; } .how-section { padding-top: 68px; } .how-heading { align-items: start; display: block; } .steps-grid { grid-template-columns: 1fr; } .step-card { min-height: 205px; } .step-icon { margin: 18px 0 12px; } .move-grid { grid-template-columns: repeat(2, 1fr); } .move-card, .move-card:nth-child(3n) { min-height: 225px; padding: 13px; } .move-icon { font-size: 39px; height: 70px; } .move-name { font-size: 19px; } .move-description { font-size: 11px; } .card-tag { margin-bottom: 17px; } .choose-section { padding: 62px 30px; } .choose-card { display: block; } .choose-doodle { left: auto; right: 10px; top: -30px; } .choose-copy { margin: 24px 0; } .site-footer { gap: 10px; line-height: 1.4; } .site-footer span:nth-child(2) { display: none; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
