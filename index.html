@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Move Your Way: fun movement ideas for every kind of kid.">
+  <title>Move Your Way</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Move Your Way home"><span class="brand-mark">✦</span> Move Your Way</a>
+    <a class="header-link" href="#moves">Find a move <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">No teams. No tryouts. Just you.</p>
+        <h1 id="hero-title">Movement is for <em>everyone.</em><br><span>Move your way.</span></h1>
+        <p class="hero-intro">Stretch, sway, wander, roll, or make up your own thing. There is no wrong way to move when it feels good to you.</p>
+        <a class="button button-bright" href="#moves">Pick your own move <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Colorful shapes representing joyful movement" role="img">
+        <div class="sunburst"></div>
+        <div class="hero-sticker sticker-star">✦</div>
+        <div class="hero-sticker sticker-spark">✳</div>
+        <div class="hero-figure"><span class="figure-head"></span><span class="figure-body"></span><span class="figure-arm figure-arm-left"></span><span class="figure-arm figure-arm-right"></span><span class="figure-leg figure-leg-left"></span><span class="figure-leg figure-leg-right"></span></div>
+        <p class="art-note">your pace<br>your rules</p>
+      </div>
+      <div class="hero-ticker" aria-hidden="true"><span>MOVE A LITTLE · FEEL A LOT · MOVE A LITTLE · FEEL A LOT · </span></div>
+    </section>
+
+    <section class="moves-section" id="moves" aria-labelledby="moves-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A menu of maybes</p>
+          <h2 id="moves-title">Pick your own <span>move.</span></h2>
+        </div>
+        <p class="section-note">Try one. Skip one. Come back tomorrow.<br><strong id="move-count" role="status" aria-live="polite">32</strong> ways to get moving.</p>
+      </div>
+      <div class="category-row" aria-label="Filter activities by category">
+        <button class="category is-active" data-filter="all">All the things</button>
+        <button class="category" data-filter="wander">Wander</button>
+        <button class="category" data-filter="music">Music &amp; dance</button>
+        <button class="category" data-filter="stretch">Stretch &amp; reset</button>
+        <button class="category" data-filter="roll">Roll &amp; glide</button>
+        <button class="category" data-filter="outside">Outside play</button>
+        <button class="category" data-filter="play">Just play</button>
+        <button class="category surprise-button" id="surprise-button" type="button">Surprise me ✦</button>
+      </div>
+      <div class="move-grid" id="move-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No moves here yet. Try another vibe.</p>
+    </section>
+
+    <section class="choose-section" aria-labelledby="choose-title">
+      <div class="choose-card">
+        <span class="choose-doodle" aria-hidden="true">✷</span>
+        <div>
+          <p class="eyebrow">Tiny reminder</p>
+          <h2 id="choose-title">Your move can be<br><em>whatever you want.</em></h2>
+        </div>
+        <p class="choose-copy">There is no scoreboard here. Your only job is to notice what makes you smile.</p>
+        <a class="button button-dark" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Move Your Way</span><span>Made for curious bodies &amp; busy minds.</span><span>© 2026</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
