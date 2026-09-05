@@ -2,6 +2,7 @@ const moves = [
   { name: 'Neighborhood stroll', description: 'Take the long way and notice three new things.', icon: '👟', category: 'wander', color: '#ffd866' },
   { name: 'Photo walk', description: 'Hunt for tiny colors, funny shapes, or cool shadows.', icon: '📸', category: 'wander', color: '#94d9ff' },
   { name: 'Dance break', description: 'Put on one song and let your body choose the moves.', icon: '💃', category: 'music', color: '#ffb5ce' },
+  { name: 'Step party', description: 'Step, clap, and make up a tiny pattern of your own.', icon: '👟', category: 'music', color: '#ff8f82' },
   { name: 'Kitchen karaoke', description: 'Sing along, sway along, and grab a snack after.', icon: '🎤', category: 'music', color: '#d7f46a' },
   { name: 'Room rave', description: 'Make a tiny dance floor between your bed and desk.', icon: '🪩', category: 'music', color: '#cbb7ff' },
   { name: 'Wiggle warm-up', description: 'Shake out your hands, shoulders, feet, and face.', icon: '🪇', category: 'music', color: '#ffd866' },
